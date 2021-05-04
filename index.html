@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, mininum-scale=1, maximum-scale=1,
+     initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <script src="all.js"></script>
+</head>
+<body>
+    
+    <input type="checkbox" id="menu-toggle">
+    <div class="side-bar">
+        <div class="brand">
+            <br><br>
+            <h3><a href="#">CarDealerZ</a></h3>
+        </div>
+        <div class="sidemenu">
+            <div class="side-user">
+                <div class="side-image" style="background-image: url(Images/20201222_113302.jpg)"></div>
+                <div class="user">
+                    <small>Williams Yusuf</small>
+                    <p>Web Developers</p>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="" class="active">
+                        <span><img src="Images/house-door.svg" alt=""></span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><img src="Images/balance-scale.svg" alt="" width="18px" height="18px"></span>
+                        <span>Finance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><img src="Images/pie-chart.svg" alt=""></span>
+                        <span>Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><img src="Images/calendar-alt.svg" alt="" width="15px" height="15px"></span>
+                        <span>Calender</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><img src="Images/user-alt.svg" alt="" width="15px" height="15px"></span>
+                        <span>Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><img src="Images/envelope.svg" alt=""></span>
+                        <span>Mailbox</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><img src="Images/check2-circle.svg" alt=""></span>
+                        <span>Task</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><img src="Images/shield-lock.svg" alt=""></span>
+                        <span>Authentication</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><img src="Images/cash-stack.svg" alt=""></span>
+                        <span>Pricing</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <label for="menu-toggle" class="menu-toggler">
+                <span class="fas fa-bars"></span>
+            </label>
+            <div class="search">
+                <span class="fas fa-search"></span>
+                <input type="search" placeholder="Enter Keyword">
+            </div>
+            <div class="iconic">
+                <span class="far fa-bell"></span>
+                <span class="far fa-bookmark"></span>
+                <span class="far fa-comment"></span>
+            </div>
+        </header>
+        <main>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon follow">
+                      <span class="fas fa-users"></span>
+                    </div>
+                    <div class="card-info">
+                        <h2>3,218</h2>
+                        <small>Total Customers</small>
+                    </div>
+                    <!-- <div class="card-images">
+                        <div style="background-image: url(images/IMG_9270.PNG);"></div>
+                        <div style="background-image: url(images/Backup_of_Backup_of_Backup_of_New\ CorelDRAW\ X3\ Graphic\ \(2\).JPG);"></div>
+                        <div style="background-image: url(images/Backup_of_Backup_of_Backup_of_New\ CorelDRAW\ X3\ Graphic\ \(2\)\ -\ Copy.JPG);"></div>
+                        <div style="background-image: url(images/Backup_of_Backup_of_New\ CorelDRAW\ X3\ Graphic\ \(2\).JPG);"></div>
+                        <div style="background-image: url(images/20201222_113302.jpg);"></div>
+                    </div> -->
+                </div>
+                <div class="card">
+                    <div class="card-icon like">
+                        <span class="fas fa-shopping-bag"></span>
+                    </div>
+                    <div class="card-info">
+                        <h2>20,855</h2>
+                        <small>Total Orders</small>
+                    </div>
+                    <!-- <div class="card-images">
+                        <div style="background-image: url(images/IMG_9270.PNG);"></div>
+                        <div style="background-image: url(images/IMG_9270.PNG);"></div>
+                        <div style="background-image: url(images/IMG_9270.PNG);"></div>
+                        <div style="background-image: url(images/IMG_9270.PNG);"></div>
+                        <div style="background-image: url(images/IMG_9270.PNG);"></div>
+                    </div> -->
+                </div>
+                <div class="card">
+                    <div class="card-icon comment">
+                        <span class="fas fa-wallet"></span>
+                    </div>
+                    <div class="card-info">
+                        <h2>$100,635</h2>
+                        <small>Total Income</small>
+                    </div>
+                    <!-- <div class="card-images">
+                        <div style="background-image: url(images/IMG_9270.PNG);"></div>
+                        <div style="background-image: url(images/IMG_9270.PNG);"></div>
+                        <div style="background-image: url(images/IMG_9270.PNG);"></div>
+                        <div style="background-image: url(images/IMG_9270.PNG);"></div>
+                        <div style="background-image: url(images/IMG_9270.PNG);"></div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="chart-grid">
+                <div class="chart-follow">
+                    <div class="chart-head">
+                        <h3>Customers</h3>
+                        <span class="fas fa-cog"></span>
+                    </div>
+                    <div id="myfirstchart" style="height: 250px;"></div>
+                </div>
+                <div class="chart-sales">
+                    <div class="chart-head">
+                        <h3>Sales</h3>
+                        <span class="fas fa-ellipsis-h"></span>
+                    </div>
+                    <div id="donut-example"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <label class="close-mobile-menu" for="menu-toggle"></label>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
